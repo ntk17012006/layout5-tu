@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-block Example</title>
+    <style>
+        body{
+            width: 100%;
+            height:150px;
+            
+        }
+        .block{
+            width: 100%;   /*rộng*/
+            height: 100%; /*dọc*/
+            line-height: 100px;
+        }
+        .outer-layout {
+            display: block; /* Kích hoạt flexbox */
+            background-color: aliceblue;
+            width: 100%;
+            height: 900px;
+            padding: 2%;
+            font-size: 25px;
+        }
+        .pp{
+            display: flex;
+            justify-content: space-between;
+        }
+        .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+        
+        .rd{
+            background-image:url(https://wallpaperaccess.com/full/9451150.jpg);
+           background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+            height: 300px;
+
+        }
+        .bl{
+            background-image:url(https://toplist.vn/images/800px/pizza-italia-17116.jpg);
+           background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 31%;
+            float: left;
+            height: 200px;
+            margin: 15px; 
+            background-position: center; /* Căn ảnh ở giữa */
+        }
+        .db{
+            background-image:url(https://toplist.vn/images/800px/sushi-nhat-ban-17110.jpg);
+           background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 31%;
+            float: left;
+            height: 200px;
+            margin: 15px; 
+            background-position: center; /* Căn ảnh ở giữa */
+        }
+        .vt{
+            text-align: center;
+            background-image:url(https://toplist.vn/images/800px/pasta-mon-ngon-bieu-tuong-cua-nuoc-y-810124.jpg);
+           background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 31%;
+            float: left;
+            height: 200px;
+            margin: 15px; 
+            background-position: center; /* Căn ảnh ở giữa */
+            
+        }
+        .ad{
+            width: 100%;
+            height: 70px;
+            font-size: 25px;
+            color: rgb(100, 58, 6);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="outer-layout">
+    <div class="pp">
+        <div class="left"><b style="color:rgb(50, 144, 221);">FOOD IN THE WORLD</b></div>
+        <div class="right"><a href="">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">MENU</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">ASSESS</a></div></div>
+    <div class="block rd"><h2 style="color:rgb(231, 213, 51);"><i>FOOD MENU</i></h3></div>
+    <div class="block ad">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PIZZA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SUSHI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PASTA</div>
+    <div class="block bl"></div>
+    <div class="block db"></div>
+    <div class="block vt"></div>
+</div>
+</body>
+</html>
